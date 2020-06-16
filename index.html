@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>📈 Tableau Embedded 📊</title>
+
+    <!-- initialise javascript -->
+    <script
+      type="text/javascript"
+      src="https://public.tableau.com/javascripts/api/tableau-2.min.js"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Embedded Analytics</h1>
+    <div>
+      <button id="showViz">Show Viz</button>
+      <button id="hideViz">Hide Viz</button>
+      <button id="exportPDF">Export to PDF</button>
+      <button id="exportPPT">Export to PPT</button>
+    </div>
+    <div class="rangeFilters">Sales Filter:
+      <input type="number" id="minValue" placeholder="Minimum"></input>
+      <input type="number" id="maxValue" placeholder="Maximum"></input>
+      <button id="applyButton">Apply</button>
+    </div>
+    <hr />
+    <div id="vizContainer"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>
